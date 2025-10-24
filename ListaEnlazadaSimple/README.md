@@ -34,7 +34,7 @@
   ```bash
   g++ -std=c++17 lista.cpp -o lista
   ./lista
-
+  ```
   > [!NOTE]
   > No se utilizan dependencias externas: basta con la biblioteca estándar (<array>, <iostream>, <sstream>, etc.).
 
@@ -53,21 +53,3 @@
       - Las funciones solicitar... manejan la entrada de usuario con validaciones sencillas.
 
   Gracias a esta estructura puedes duplicar un escenario o modificar los flujos del menú sin tocar la implementación de la lista.
-
-  ## Extensiones sugeridas
-
-  - Añadir métodos como buscar, reverse o clear directamente en lista.h.
-  - Ajustar los valores por defecto editando obtenerConfigPorDefecto<T>().
-  - Crear un main alternativo que use llenarLista y procesarLista como demostración automatizada (sin interacción).
-
-  > [!WARNING]
-  > La implementación evita lanzar excepciones en operaciones fuera de rango: devuelve valores por defecto o false. Si necesitas un manejo estricto de errores, valida tus
-  > posiciones antes de llamar a los métodos o modifica la plantilla para lanzar std::out_of_range.
-
-  ## Estado del proyecto
-
-  - [x] Lista enlazada simple genérica
-  - [x] Menú interactivo para explorar operaciones
-  - [x] Configuración modificable sin recompilar
-  - [ ] Persistencia de datos
-  - [ ] Interfaz gráfica
